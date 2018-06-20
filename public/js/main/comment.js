@@ -10,7 +10,7 @@ function handler(event) {
           $('.modal-body').append(`
             <div class="comment-wrap">
               <div class="comment-img">
-                <img src="../../images/kakaofriends/4.jpg" width="58px" height="50px" alt="">
+                <img src="/public/images/kakaofriends/4.jpg" width="58px" height="50px" alt="">
               </div>
               <div class="comment-text">
                 <span class="in-block comment-name">첫 댓글을 달아주세요!</span>
@@ -29,7 +29,7 @@ function handler(event) {
           $('.modal-body').append(`
             <div class="comment-wrap">
               <div class="comment-img">
-                <img src="../../images/kakaofriends/${imageNum}.jpg" width="58px" height="50px" alt="">
+                <img src="/public/images/kakaofriends/${imageNum}.jpg" width="58px" height="50px" alt="">
               </div>
               <div class="comment-text">
                 <span class="in-block comment-name">${result[i].name}</span>
@@ -43,7 +43,7 @@ function handler(event) {
       if(result[length-1].morecomment) {
         $('.modal-body').append(`<div class="comment-update-wrap">
             <div class="comment-update-img">
-              <img class="update-icon" src="../../images/update.jpg" width="38px" height="38px" alt="">
+              <img class="update-icon" src="/public/images/update.jpg" width="38px" height="38px" alt="">
             </div>
             <div class="comment-update-left">
               <h5 class="comment-update-text">이전 댓글</h5>
