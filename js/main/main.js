@@ -34,25 +34,25 @@ let getFbText = function(feed, count) {
   let time = compareDate(feed.created_time);
   switch(feed.from) {
     case 1:
-      photo = "/public/images/syu-bamboo.jpg";
+      photo = "../../images/syu-bamboo.jpg";
       break;
     case 2:
-      photo = '/public/images/syu-deliver.jpg';
+      photo = '../../images/syu-deliver.jpg';
       break;
     case 3:
-      photo = '/public/images/syu-chonghak.jpg';
+      photo = '../../images/syu-chonghak.jpg';
       break;
     case 4:
-      photo = '/public/images/syu-yeonhab.jpg';
+      photo = '../../images/syu-yeonhab.jpg';
       break;
     case 5:
-      photo = '/public/images/syu-computer.jpg';
+      photo = '../../images/syu-computer.jpg';
       break;
     case 6:
-      photo = '/public/images/syumain.jpg';
+      photo = '../../images/syumain.jpg';
       break;
     default:
-      photo = '/public/images/kakaofriends/1.jpg';
+      photo = '../../images/kakaofriends/1.jpg';
   }
   if(count === undefined) {
     count = 0;
