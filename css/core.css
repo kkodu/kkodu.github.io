@@ -37,7 +37,7 @@ a:hover { text-decoration: none; }
   .navbar > .container {
     width: 1080px;
     height: 38px;
-    margin: 0 0 0 170px;
+    margin: 0 0 0 220px;
   }
   .navbar-brand {
     font-size: 15px;
@@ -71,7 +71,7 @@ a:hover { text-decoration: none; }
   }
   .all-contents {
     max-width: 360px;
-    margin-left: 170px;
+    margin-left: 220px;
   }
   .swiper-wrapper {
     position: relative;
@@ -83,7 +83,7 @@ a:hover { text-decoration: none; }
   .slide-2 {
     position: absolute;
     top: 0;
-    left: 538px;
+    left: 588px;
     max-width: 360px;
     overflow: hidden;
     z-index: 100;
@@ -94,7 +94,7 @@ a:hover { text-decoration: none; }
   .slide-3 {
     position: absolute;
     top: 0;
-    left: 906px;
+    left: 956px;
     max-width: 360px;
     overflow: hidden;
     border-left: 1px solid #e5e5e5;
