@@ -197,7 +197,7 @@ const postloader = function (result) {
   if (result === 'show') {
     $('.post-loader').show();
   } else {
-    $('.post-loader').hide(1000);
+    $('.post-loader').hide();
   }
 }
 
