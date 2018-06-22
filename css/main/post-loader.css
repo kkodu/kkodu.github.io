@@ -1,7 +1,5 @@
 /* post loader */
 .post-loader {
-  display: none;
-
   box-sizing: border-box;
   padding: 10px;
 
@@ -63,7 +61,7 @@
   border-radius: 11px;
   background-color: #fff;
   opacity: 0;
-  animation: post-loader linear 0.8s infinite;
+  animation: post-loader linear 0.6s infinite;
 }
 .bar-name {
   width: 100px;
