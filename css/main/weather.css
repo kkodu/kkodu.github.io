@@ -155,8 +155,8 @@
   overflow: hidden;
 }
 .tomorrow-wrapper .icons, .dayafter-wrapper .icons {
-  margin-left: 6px;
-  margin-right: 18px;
+  margin-left: 0;
+  margin-right: 10px;
   float: left;
 }
 .tomor-temp, .dayafter-temp {
