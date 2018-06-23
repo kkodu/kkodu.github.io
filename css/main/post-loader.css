@@ -40,7 +40,7 @@
   height: 40px;
   background-color: #fff;
   border-radius: 25%;
-  animation: post-loader linear 0.6s infinite;
+  animation: post-loader linear 0.4s infinite;
 }
 .profile-details {
   padding: 5px 15px;
@@ -63,7 +63,7 @@
   border-radius: 11px;
   background-color: #fff;
   opacity: 0;
-  animation: post-loader linear 0.8s infinite;
+  animation: post-loader linear 0.4s infinite;
 }
 .bar-name {
   width: 100px;

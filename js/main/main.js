@@ -185,7 +185,6 @@ $(() => {
   }
 });
 
-let scrollFlag = true;
 const preloader = function (result) {
   if (result === 'show') {
     $('.bouncing-loader').css('visibility', 'visible');
@@ -201,6 +200,7 @@ const postloader = function (result) {
   }
 }
 
+let scrollFlag = true;
 // 무한 스크롤링 시 렌더링
 $('.slide-1').scroll(function(e) {
 
