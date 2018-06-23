@@ -211,7 +211,7 @@ $('.slide-1').scroll(function(e) {
       scrollFlag = false; // 접근 제한 플래그
       console.log('[loading..] more feeds');
 
-      postloader('show'); // => 로딩 아이콘 보여주기
+      // => 로딩 아이콘 보여주기
       setTimeout(function() {
         fn = (result) => {
           postloader('hide'); // 1.2초 후, 로딩 아이콘 숨김
