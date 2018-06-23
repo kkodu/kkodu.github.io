@@ -230,30 +230,6 @@ firstSlide.scroll(function(e) {
       }, 100);
     }
   }
-
-  let nav = $('nav');
-  let gnb = $('.global-nav-btn-list');
-  let contents = $('.col-md-12');
-  let bodyh = $('body').height();
-  // scroll up & down
-  if (scroll > position) {
-    // scroll down
-    nav.removeClass('fixed-top');
-    nav.addClass('nav-up');
-    gnb.addClass('gnb-up');
-    contents.addClass('contents-up');
-    contents.height(bodyh);
-    $('.slide-1').height(bodyh);
-  } else {
-    // scroll up
-    nav.addClass('fixed-top');
-    nav.removeClass('nav-up');
-    gnb.removeClass('gnb-up');
-    contents.removeClass('contents-up');
-    contents.height(bodyh);
-    $('.slide-1').height(bodyh);
-  }
-  position = scroll;
 });
 
 // 새로 업데이트 된 피드들만 렌더링

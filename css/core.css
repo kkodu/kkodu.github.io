@@ -20,32 +20,12 @@ a:hover { text-decoration: none; }
   .row {
     position: relative;
   }
-  .navbar {
-    width: 100%;
-    transition: top 0.2s linear; 
-  }
-  .nav-up {
-    position: fixed;
-    top: -48px;
-    left: 0;
-    right: 0;
-    z-index: 1030;
-  }
-  .gnb-up {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  .contents-up {
-    margin-top: 49px !important;
-  }
+
   .global-nav-btn-list {
     display: block;
-    transition: top 0.2s linear;
   }
   .col-md-12 {
     margin-top: 97px;
-    transition: margin-top 0.2s linear;
   }
   .card {
     border-left: none;
@@ -54,13 +34,6 @@ a:hover { text-decoration: none; }
   }
 }
 @media screen and (min-width: 768px) {
-  .nav-up {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1030;
-  }
   .navbar > .container {
     width: 1080px;
     height: 38px;
