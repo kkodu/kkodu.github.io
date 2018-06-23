@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/earlyaccess/hanna.css');
-
 .weather-box {
   width: 100%;
   height: 204px;
@@ -25,7 +23,7 @@
   padding: 10px;
   font-size: 17px;
   font-weight: medium;
-  font-family: 'Hanna', sans-serif;
+  font-family: 'Jua', sans-serif;
 }
 .weather-content {
   overflow: hidden;
