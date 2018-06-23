@@ -59,7 +59,6 @@ const AJAX = {
 
     xhr.addEventListener('load', () => {
       const commentResult = JSON.parse(xhr.responseText);
-      console.log(commentResult);
       // commentResult.sort(function(a, b) {
       //   return new Date(b.created_time).getTime() - new Date(a.created_time).getTime();
       // })
