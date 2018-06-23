@@ -160,7 +160,6 @@ $(() => {
   fn = function(result) {
     var date = new Date();
     var curHours = date.getHours();
-    console.log(curHours);
     makeWeatherContent(result, date, curHours);
   }
   AJAX.reqweatherinfo('https://syuproject.herokuapp.com/syuinfo/weather', fn);
@@ -201,15 +200,18 @@ const postloader = function (result) {
 }
 
 let scrollFlag = true;
+let firstSlide = $('.slide-1');
+let position = firstSlide.scrollTop();
 // 무한 스크롤링 시 렌더링
-$('.slide-1').scroll(function(e) {
-
+firstSlide.scroll(function(e) {
+  let scroll = firstSlide.scrollTop();
+  let firstSlideHeight = firstSlide.height();
+  let allContentsHeight = allContents.height();
   // 스크롤이 문서 아래 부분 근처에 왔을 시
-  if($('.slide-1').scrollTop() >= $('.all-contents').height() - $('.slide-1').height()) {
-    if(scrollFlag) {
-
+  if (scroll >= allContentsHeight - firstSlideHeight) {
+    if (scrollFlag) {
       scrollFlag = false; // 접근 제한 플래그
-      console.log('[loading..] more feeds');
+      console.log('loading.. more feeds');
 
       // => 로딩 아이콘 보여주기
       setTimeout(function() {
@@ -228,6 +230,30 @@ $('.slide-1').scroll(function(e) {
       }, 100);
     }
   }
+
+  let nav = $('nav');
+  let gnb = $('.global-nav-btn-list');
+  let contents = $('.col-md-12');
+  let bodyh = $('body').height();
+  // scroll up & down
+  if (scroll > position) {
+    // scroll down
+    nav.removeClass('fixed-top');
+    nav.addClass('nav-up');
+    gnb.addClass('gnb-up');
+    contents.addClass('contents-up');
+    contents.height(bodyh);
+    $('.slide-1').height(bodyh);
+  } else {
+    // scroll up
+    nav.addClass('fixed-top');
+    nav.removeClass('nav-up');
+    gnb.removeClass('gnb-up');
+    contents.removeClass('contents-up');
+    contents.height(bodyh);
+    $('.slide-1').height(bodyh);
+  }
+  position = scroll;
 });
 
 // 새로 업데이트 된 피드들만 렌더링

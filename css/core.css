@@ -8,7 +8,7 @@ html, body {
 body { padding: 0; font-family: 'Nanum Gothic', sans-serif; font-weight: 500; background-color: #efefef; }
 ul { margin: 0; padding: 0; }
 li { list-style: none; }
-a { text-decoration: none; transition: linear 1s; }
+a { text-decoration: none; transition: 1s linear; }
 a:hover { text-decoration: none; }
 
 @media screen and (max-width: 767px) {
@@ -20,20 +20,47 @@ a:hover { text-decoration: none; }
   .row {
     position: relative;
   }
+  .navbar {
+    width: 100%;
+    transition: top 0.2s linear; 
+  }
+  .nav-up {
+    position: fixed;
+    top: -48px;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+  .gnb-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .contents-up {
+    margin-top: 49px !important;
+  }
   .global-nav-btn-list {
     display: block;
+    transition: top 0.2s linear;
   }
   .col-md-12 {
     margin-top: 97px;
+    transition: margin-top 0.2s linear;
   }
   .card {
     border-left: none;
     border-right: none;
     border-radius: 0px !important;
-
   }
 }
 @media screen and (min-width: 768px) {
+  .nav-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
   .navbar > .container {
     width: 1080px;
     height: 38px;
